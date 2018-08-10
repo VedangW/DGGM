@@ -1,0 +1,6 @@
+model_checkpoint_path: "fpt.aae.4e.model.ckpt"
+all_model_checkpoint_paths: "fpt.aae.0e.model.ckpt"
+all_model_checkpoint_paths: "fpt.aae.1e.model.ckpt"
+all_model_checkpoint_paths: "fpt.aae.2e.model.ckpt"
+all_model_checkpoint_paths: "fpt.aae.3e.model.ckpt"
+all_model_checkpoint_paths: "fpt.aae.4e.model.ckpt"
