@@ -1,15 +1,23 @@
 #!usr/bin/python
 
+""" File which instantiates the model and trains it
+	on the dataset.
+"""
+
 import sys
+import config
 import aae_class
 
-def train_aae(epochs, summary_file):
-	aae = aae_class.AAE(batch_size=1024, num_epochs=epochs)
+summary_file = config.logdir
+num_of_epochs = config.num_of_epochs
+
+def train_aae():
+	aae = aae_class.AAE()
 	with open('./fpt.aae.log', 'w') as log:
-		aae = aae.train(log, summary_file)
+		aae = aae.train(log, summary_file, num_of_epochs)
 
 def main():
-	train_aae(int(sys.argv[1]), sys.argv[2])
+	train_aae()
 
 if __name__ == "__main__":
 	main()

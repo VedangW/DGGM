@@ -1,13 +1,18 @@
 #!usr/bin/python
 
+""" Module that defines the utility functions for reading
+    and selecting data along with functions that define the
+    initialiser, layers and prior for the tf model.
+"""
+
+import config
 import numpy as np
 import tensorflow as tf
-from tqdm import tqdm
 
 # Load the train and test files
 
-train = 'train_aae.txt'
-test = 'test_aae.txt'
+train = config.train
+test = config.test
 
 # Preprocessing and batch generation functions
 
